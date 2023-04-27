@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Register </title>
+        <body background= "https://wallpaperaccess.com/full/2314983.jpg">   </body>
+        <link rel="stylesheet" href="{{ url_for('static', filename='extra.css') }}">
+    </head>
+    <body></br></br></br></br></br>
+        <div align="center">
+          <div align="center" class="border">
+             <div class="header">
+                <h1 class="word">Register</h1>
+             </div></br></br></br>
+            <h2 class="word">
+                <form action="/registration" method="post" autocomplete="off">
+                  <div class="msg">{{ msg }}</div>
+                    <input id="email" name="email" type="text" placeholder="Enter Your Email ID" class="textbox"/></br></br>
+                    <input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox"/></br></br>
+
+                    <input type="submit" class="btn" name = "reg" value="Sign Up"></br><br>
+                    <a href="/" id = "login">login</a>
+                </form>
+            </h2>
+
+          </div>
+        </div>
+    </body>
+</html>
